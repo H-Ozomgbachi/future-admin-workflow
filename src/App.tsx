@@ -7,6 +7,8 @@ import { Transactions } from './pages/Transactions';
 import { KYCVerification } from './pages/KYCVerification';
 import { Escalations } from './pages/Escalations';
 import { AuditLogs } from './pages/AuditLogs';
+import { WorkflowBuilder } from './pages/WorkflowBuilder';
+import { WorkflowMonitor } from './pages/WorkflowMonitor';
 
 export default function App() {
   // Simple state-based routing for the demo
@@ -31,6 +33,10 @@ export default function App() {
       switch (activePage) {
         case 'dashboard':
           return <SuperAdminDashboard />;
+        case 'workflows':
+          return <WorkflowBuilder />;
+        case 'workflow-monitor':
+          return <WorkflowMonitor />;
         case 'risk-heatmap':
           return <SuperAdminDashboard />; // Reusing dashboard for demo as it contains the heatmap
         case 'escalations':

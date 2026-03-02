@@ -123,7 +123,7 @@ export function LoanProcessing() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold text-white">AI Risk Intelligence</h2>
-                    <p className="text-primary-300 text-sm">Real-time analysis by FinGuard Engine</p>
+                    <p className="text-primary-300 text-sm">Real-time analysis by Wema AI Engine</p>
                   </div>
                 </div>
 

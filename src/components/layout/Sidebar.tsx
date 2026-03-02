@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { LayoutDashboard, Users, FileText, Activity, ShieldAlert, PieChart, Settings, LogOut, MessageSquare, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Users, FileText, Activity, ShieldAlert, PieChart, Settings, LogOut, MessageSquare, Menu, X, Brain, Eye } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 interface SidebarProps {
@@ -21,6 +21,8 @@ export function Sidebar({ role, onRoleChange, activePage, onNavigate, isOpen, on
 
   const superAdminLinks = [
     { id: 'dashboard', label: 'Strategic Overview', icon: PieChart },
+    { id: 'workflows', label: 'Agentic Workflows', icon: Brain },
+    { id: 'workflow-monitor', label: 'Agent Monitor', icon: Eye },
     { id: 'risk-heatmap', label: 'Risk Heatmap', icon: Activity },
     { id: 'escalations', label: 'Escalations', icon: ShieldAlert },
     { id: 'audit', label: 'Audit Logs', icon: FileText },
@@ -48,7 +50,7 @@ export function Sidebar({ role, onRoleChange, activePage, onNavigate, isOpen, on
             <div className="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center shadow-lg shadow-primary-900/50">
               <ShieldAlert className="text-white w-5 h-5" />
             </div>
-            <span className="text-white font-bold text-lg tracking-tight">FinGuard AI</span>
+            <span className="text-white font-bold text-lg tracking-tight">Wema SmartAdmin</span>
           </div>
           <button onClick={onClose} className="lg:hidden text-slate-400 hover:text-white">
             <X className="w-5 h-5" />

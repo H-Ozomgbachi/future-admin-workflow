@@ -64,7 +64,7 @@ export async function chatWithAI(message: string, context: string) {
 
   try {
     const prompt = `
-      You are FinGuard AI, an advanced assistant for a fintech admin platform.
+      You are Wema SmartAdmin AI, an advanced assistant for Wema Bank's admin platform.
       
       Context:
       ${context}

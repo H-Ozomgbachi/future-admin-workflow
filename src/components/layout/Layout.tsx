@@ -17,7 +17,7 @@ export function Layout({ children, role, onRoleChange, activePage, onNavigate }:
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'ai'; text: string }[]>([
-    { role: 'ai', text: `Hello! I'm your FinGuard AI assistant. Ask me about risk trends, specific accounts, or compliance policies.` }
+    { role: 'ai', text: `Hello! I'm your Wema SmartAdmin assistant. Ask me about risk trends, specific accounts, or compliance policies.` }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -66,7 +66,7 @@ export function Layout({ children, role, onRoleChange, activePage, onNavigate }:
             <button onClick={() => setIsSidebarOpen(true)} className="p-1">
               <Menu className="w-6 h-6" />
             </button>
-            <span className="font-bold">FinGuard AI</span>
+            <span className="font-bold">Wema SmartAdmin</span>
           </div>
           <div className="text-xs font-mono bg-slate-800 px-2 py-1 rounded">
             {role === 'admin' ? 'ADMIN' : 'SUPER'}
@@ -91,7 +91,7 @@ export function Layout({ children, role, onRoleChange, activePage, onNavigate }:
                 <div className="p-4 bg-primary-600 text-white flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <Sparkles className="w-4 h-4" />
-                    <span className="font-medium">FinGuard Assistant</span>
+                    <span className="font-medium">Wema Assistant</span>
                   </div>
                   <button onClick={() => setIsChatOpen(false)} className="hover:bg-primary-500 rounded p-1">
                     <X className="w-4 h-4" />
